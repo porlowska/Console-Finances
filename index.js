@@ -88,15 +88,15 @@ var finances = [
 ];
 
 //Declare variables
-var numberOfMonths = finances.length; // totalMonths //Total number of months in  the dataset
-var totalPnL = 0; //netTotal // PnL-Profit and Loss, The net total amount of Profit/Losses over the entire period
-var thisMonth = 0; //currentMonth
-var pastMonth = 0; //previousMonth
-var monthlyPnLChange = 0; //monhtlyChange
-var totalPnLChange = 0; //totalMonthlyChange
-var averagePnLChange = 0; //averageTotal change
-var greatestPnLIncrease = 0; //greatestIncrease
-var greatestPnLDecrease = 0; //greatestDecrease
+var numberOfMonths = finances.length; //Total number of months in  the dataset
+var totalPnL = 0;  // PnL-Profit and Loss, The net total amount of Profit/Losses over the entire period
+var thisMonth = 0; 
+var pastMonth = 0; 
+var monthlyPnLChange = 0; //monthly change in Profit and Losses
+var totalPnLChange = 0; // sum of monthly changes in Profit and Losses
+var averagePnLChange = 0; //average of the changes in Profit/Losses
+var greatestPnLIncrease = 0; // greatest increase in Profit/Losses
+var greatestPnLDecrease = 0; // greatest decrease in Profit/Losses
 var greatestPnLIncreaseMonth;
 var greatestPnLDecreaseMonth;
 

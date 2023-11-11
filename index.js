@@ -96,6 +96,8 @@ var totalPnLChange = 0; //total Monthly Change
 var averagePnLChange = 0; //average total change
 var greatestPnLIncrease; //greatestIncrease
 var greatestPnLDecrease; //greatestDecrease
+var greatestPnLIncreaseMonth;
+var greatestPnLDecreaseMonth;
 
 
 
@@ -119,11 +121,10 @@ for (var i = 0; i < numberOfMonths; i++) { //loop allows us to calculate months 
 // Declare greatestDecrease variable
 // Choose lowest number in the monthlyChange array
 
-// //console.log(
-//   Financial Analysis /n 
-//   ----------------- /n 
-//   "Total Months: " + totalMonths /n
-//   "Total: " + netTotal /n
-//   "Average Change: " + averageTotalChange /n
-//   "Greatest Increase in Profits/Losses: Feb-2012 ($" + greatestIncrease + ")" /n
-//   "Greatest Decreases in Profits/Losses: Sep-2013 ($" + greatestDecrease + ")"
+console.log("Financial Analysis"+ "\n" +
+"-----------------" + "\n" +
+"Total Months: " + numberOfMonths + "\n" +
+"Total: " + totalPnL + "\n" +
+"Average Change: " + averagePnLChange + "\n" +
+"Greatest Increase in Profits/Losses: " +greatestPnLIncreaseMonth +  "($" + greatestPnLIncrease + ")" + "\n" +
+"Greatest Decreases in Profits/Losses: " + greatestPnLDecreaseMonth + "($" + greatestPnLDecrease + ")");

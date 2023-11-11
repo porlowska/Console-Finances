@@ -97,12 +97,18 @@ var averagePnLChange = 0; //average total change
 var greatestPnLIncrease; //greatestIncrease
 var greatestPnLDecrease; //greatestDecrease
 
-//Calculate The total number of months included in the dataset.
 
-//Calculate The net total amount of Profit/Losses over the entire period.
 
-// Declare variable averageTotalChange
-// Calculate changes between each month, so from month to month
+for (var i = 0; i < numberOfMonths; i++) { //loop allows us to calculate months one by one 
+  thisMonth = finances[i][1];
+  totalPnL = totalPnL + thisMonth; // Calculates the total number of months included in the dataset.
+  if (i > 0) { //we are skipping the first (0) in the array 
+    monthlyPnLChange = thisMonth - pastMonth; //Calculates The net total amount of Profit/Losses over the entire period.
+  }
+  
+}
+
+
 // Average the averageTotalChange == (monthlyTotalChange / ( totalMonths - 1))
 
 // //Greatest increase in profit/losses over period

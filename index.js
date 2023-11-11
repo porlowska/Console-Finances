@@ -86,3 +86,38 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+//Declare variables
+var numberOfMonths = finances.length; // totalMonths //Total number of months in  the dataset
+var totalPnL = 0; //netTotal // PnL-Profit and Loss, The net total amount of Profit/Losses over the entire period
+var thisMonth = 0; //currentMonth
+var pastMonth = 0; //previousMonth
+var monthlyPnLChange = 0; //monhtlyChange
+var totalPnLChange = 0; //total Monthly Change
+var averagePnLChange = 0; //average total change
+var greatestPnLIncrease; //greatestIncrease
+var greatestPnLDecrease; //greatestDecrease
+
+//Calculate The total number of months included in the dataset.
+
+//Calculate The net total amount of Profit/Losses over the entire period.
+
+// Declare variable averageTotalChange
+// Calculate changes between each month, so from month to month
+// Average the averageTotalChange == (monthlyTotalChange / ( totalMonths - 1))
+
+// //Greatest increase in profit/losses over period
+// Declare greatestIncrease varsiable 
+// Choose highest number in the monthlyChange array
+
+// //Greater decrease in profit/losses over period
+// Declare greatestDecrease variable
+// Choose lowest number in the monthlyChange array
+
+// //console.log(
+//   Financial Analysis /n 
+//   ----------------- /n 
+//   "Total Months: " + totalMonths /n
+//   "Total: " + netTotal /n
+//   "Average Change: " + averageTotalChange /n
+//   "Greatest Increase in Profits/Losses: Feb-2012 ($" + greatestIncrease + ")" /n
+//   "Greatest Decreases in Profits/Losses: Sep-2013 ($" + greatestDecrease + ")"

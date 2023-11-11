@@ -108,11 +108,12 @@ for (var i = 0; i < numberOfMonths; i++) { //loop allows us to calculate months 
 
   if (i > 0) { //we are skipping the first (0) in the array 
     monthlyPnLChange = thisMonth - pastMonth; //Calculates The net change in Profit/Losses each month
+ 
   }
-
   pastMonth = thisMonth; 
-  totalPnL = totalPnL + monthlyPnLChange;
-  averagePnLChange = Math.round(totalPnL/(numberOfMonths-1)*100)/100; //The average of the changes in Profit/Losses over the entire period, rounded to second decimal.
+  totalPnLChange = totalPnLChange + monthlyPnLChange;
+  averagePnLChange = Math.round(totalPnLChange/(numberOfMonths-1)*100)/100;
+  //The average of the changes in Profit/Losses over the entire period, rounded to second decimal.
 }
 
 

@@ -108,22 +108,24 @@ for (var i = 0; i < numberOfMonths; i++) { //loop allows us to calculate months 
 
   if (i > 0) { //we are skipping the first (0) in the array 
     monthlyPnLChange = thisMonth - pastMonth; //Calculates The net change in Profit/Losses each month
- 
+
   }
+  
   pastMonth = thisMonth; 
   totalPnLChange = totalPnLChange + monthlyPnLChange;
-  averagePnLChange = Math.round(totalPnLChange/(numberOfMonths-1)*100)/100;
-  //The average of the changes in Profit/Losses over the entire period, rounded to second decimal.
+  averagePnLChange = Math.round(totalPnLChange/(numberOfMonths-1)*100)/100; //The average of the changes in Profit/Losses over the entire period, rounded to second decimal.
+
+  if (greatestPnLIncrease < monthlyPnLChange) { //The greatest increase in PnL
+    greatestPnLIncrease = monthlyPnLChange; //amount of greatest increase in PnL
+    greatestPnLIncreaseMonth = finances[i][0]; //date of greatest increase in PnL
+
+  } else if (greatestPnLDecrease > monthlyPnLChange) { //The greatest decrease in PnL
+    greatestPnLDecrease = monthlyPnLChange; //amount of greatest decrease in PnL
+    greatestPnLDecreaseMonth = finances[i][0]; //date of greatest decrease in PnL
+  }
+
+  
 }
-
-
-// //Greatest increase in profit/losses over period
-// Declare greatestIncrease varsiable 
-// Choose highest number in the monthlyChange array
-
-// //Greater decrease in profit/losses over period
-// Declare greatestDecrease variable
-// Choose lowest number in the monthlyChange array
 
 console.log("Financial Analysis"+ "\n" +
 "-----------------" + "\n" +
